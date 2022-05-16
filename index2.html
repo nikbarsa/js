@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use script'
+        let result1 = 10 + 10 + "10"; // складывем 10 + 10 получаем 20. Прибавляем к 20 число 10 не складывая. Т.к "10" в запятых. Получаем '2010' 
+        let result2 = 10 + "10" + 10; // Т.к "10" стоит по середине , то мы к "10" прибавляем с двуч сторон 10.Получается '101010'
+        let result3 = 10 + 10 + +"10"; // Т.к стоит 2 плюса значит последняя 10 это обычное число. Мы просто скалдывем все числа. Получается '30'
+        let result4 = 10 / -""; // Т.к ""-это является 0.Значит 10 делим на 0 получается -Infinity
+        let result5 = 10 / +"2,5"; // Т.к здесь 2,5 стоит запятая а не тоска то это не будет числом. Ответ будет NaN
+        console.log(result1);
+        console.log(result2);
+        console.log(result3);
+        console.log(result4);
+        console.log(result5);
+    </script>
+
+</body>
+
+</html>
