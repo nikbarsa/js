@@ -1,0 +1,16 @@
+.product-item {
+    display: inline-block;
+    margin-left: 320px;
+    font-family: 'Lato', sans-serif;
+    color: #4F4745;
+
+
+}
+
+.buy-btn {
+    background-color: burlywood;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
