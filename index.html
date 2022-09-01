@@ -5,31 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин</title>
-    <link rel="stylesheet" href="main.js">
-    <link rel="stylesheet" href="main1.js">
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header class="header_basket">
-        <ul class="header_top">
-            <li class="header_basket"><button class="btn-cart" type="button"><img src="img/icons8-купить-48.png"
-                        alt="корзину"></button>
-                <div class="cart-basket invisible"></div>
-            </li>
-            <li>
-                <h3 class="header_shop">shop</h3>
-            </li>
-        </ul>
-    </header>
-    <main class="main_catalog">
-        <div class="products"></div>
-    </main>
-    <script defer src="https://use.fontawesome.com/relaeses/v5.7.2/js/all/js"
-        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPL/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <p class="text-container">
+        A: `Hello, how are you?`
+
+        B: `Fine, thanks. And you?`
+
+        A:`Great! My name is Lima.`
+
+        B: `I am Emily. It’s nice to meet you.`
+
+        A: `It’s nice to meet you, too.`
+
+        B: `Are you from New York?`
+
+        A: `Yes, I am. Where are you from?`
+
+        B: `I am from here, from Bedford.`
+
+        A: `Oh, great. Can we be friends?`
+
+        B: `Sure.`
+    </p>
+    <button id="replace">Replace</button>
+    <script>
+        let block = document.getElementById('text-container');
+        document.getElementById('replace').addEventListener('click', () => {
+            block.textContent = block.textContent.replace(/'/g, ' " ');
+            block.textContent = block.textContent.replace(/\B'|'\B/g, ' " ');
+        });
+    </script>
 </body>
 
 </html>
