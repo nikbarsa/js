@@ -19,15 +19,19 @@
             </li>
             <li>
                 <h3 class="header_shop">shop</h3>
+                <search></search>
+                <button class="btn-shop" type="button" @click="showCart = !showCart">Корзина</button>
+                <cart :cart-items="cartItems" :img="imgCart" :visibilty="showCart" @remove="remove"></cart>
             </li>
         </ul>
     </header>
     <main class="main_catalog">
         <div class="products"></div>
     </main>
+    <products :products="filtered" :img="imgProduct" @add_product="addProduct"></products>
     <script defer src="https://use.fontawesome.com/relaeses/v5.7.2/js/all/js"
-        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPL/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-        crossorigin="anonymous"></script>
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPL/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+        </script>
     <script src="main.js"></script>
 </body>
 
